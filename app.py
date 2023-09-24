@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from tensorflow import keras
+# from tensorflow import keras
 from urllib.parse import urlparse
 import numpy as np
 import re
@@ -10,6 +10,7 @@ import pickle
 
 with open("rf.pkl", "rb") as file:
     model = pickle.load(file)
+
 
 
 # url='https://www.youtube.com/'
